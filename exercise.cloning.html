@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #all{
+        
+                height: 100%;
+                
+            }
+            h1{
+                color: blue;
+                padding-bottom: 50px;
+            }
+            a{
+                color: black;
+            }
+            #head{
+                border:1px solid white;
+                height: 50px;
+                background-color: white;
+                display: flex ;
+
+            }
+            #side{
+                height: 200px;
+                display: flex;
+                width: fit-content;
+                margin-left: 300px;
+                padding: 15px;
+              
+                
+            }
+            #menu{
+                border: 1px solid white;
+                height: 400px;
+                width: 100%;
+                background-image: url(fonf.jpeg);
+                background-size: cover;
+            
+            }
+
+            #start{
+                color: white;
+            }
+            #reservation{
+                background-color: white;
+                border: 1px solid;
+                border-radius: 25px;
+                height: 70px;
+                margin: 50px;
+                display: flex;
+                padding: 25px;
+                margin-top: 150px;
+                flex-direction:row;
+                justify-content: center;
+                align-items:normal;
+            }
+            #destination{
+                border: 1px solid;
+                border-radius: 20px;
+                padding: 25px;
+                align-items: start;
+                margin-right: 120px;
+                
+            }
+           
+            #date{
+                border: 1px solid;
+                border-radius: 20px;
+                align-items:center;
+                width: 310px;
+                text-align: left;
+                padding: 10px;
+                
+            }
+            #guest{
+                border: 1px solid;
+                border-radius: 20px;
+                padding: 10px;
+                align-items:end;
+                margin-left: 100px;
+                text-align: left;
+            }
+            #search{
+                border: 1px solid;
+                border-radius: 15px;
+                width: 150px;
+            
+            }
+            input[type="submit"]{
+                background-color: rgb(16, 16, 73);;
+                color: white;
+                border-radius: 20px;
+                padding: 10px;
+                margin-left: 20px;
+            }
+            #contain{
+                border-radius: 20px;
+                display: flex;
+                background-color: rgb(16, 16, 73);
+                color: white;
+                height: 70px;
+                padding: 10px;
+                margin: 50px ;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="all">
+            <div id="head">
+                <h1 style="text-align: left;">FeWo- direkt</h1>
+                <div id="side">
+                    <a href="open.html" style="text-decoration: none;">Open the app</a>&nbsp;&nbsp;&nbsp;
+                    <a href="travel.html" style="text-decoration: none;">My travels planner</a>&nbsp;&nbsp;&nbsp;
+                    <a href="register.html" style="text-decoration: none;">Register your proprerty</a>&nbsp;&nbsp;&nbsp;
+                    <a href="help.html" style="text-decoration: none;">Help</a>&nbsp;&nbsp;&nbsp;
+                    <a href="sign.html" style="text-decoration: none;">Sign up</a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div id="menu">
+                <div id="start"><h2 style="text-align: center;">The whole place just for you</h2></div>
+                <div id="reservation">
+                    <div id="destination">
+                    <label for=""></label>
+                        <input type="text" name="place" placeholder="Where do you want to go" style="text-align:left;"
+                        required>
+                    </div>
+                    <div id="date" style="border-radius: 20px;">
+                        <label for="">Date<br></label>
+                        <input type="date" name="begin" required>
+                        -
+                        <input type="date" name="end" required>
+                    </div>
+                    <div id="guest" style="border-radius: 25px;">
+                        <label for="">Guests<br></label>
+                        <input type="text" name="guest" required> 
+                    </div>
+                    <input type="submit" value="Search" name="Search">
+                </div>
+           
+            </div>
+            <div id="contain">
+                <p>Sign in to message the host and get more details about a place to stay.</p>
+                <input type="submit" value="Sign up" name="Signup" span style="margin-left: 500px;">
+            </div>
+        </div>
+    </body>
+</html>
